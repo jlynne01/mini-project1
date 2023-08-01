@@ -25,35 +25,41 @@
 <body>
 
     <!-- Header -->
-    <div class="about__header">
-        <nav class="fixed-top header__nav navbar navbar-expand-lg bg-dark navbar-dark"
-            style="background-color: rgba(226, 221, 221, 0.999) !important;">
-            <div class="container-fluid">
-                <a href="#" class="header__brand navbar-brand">KJ<span class="header__brand--span">Design</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="../index.html">Home</a></li>
-                        <li class="nav-item"><a href="#">About</a></li>
-                        <li class="nav-item"><a href="#portfolio-section" rel="noopener">Portfolio</a></li>
-                        <li class="nav-item"><a href="../pages/contact.html">Contact</a></li>
-                    </ul>
-                </div>
+<div class="about__header">
+    <nav class="fixed-top header__nav navbar navbar-expand-lg bg-dark navbar-dark"
+        style="background-color: rgba(226, 221, 221, 0.999) !important;">
+        <div class="container-fluid">
+            <img src="../images/logo.webp" alt="FreeLogo Design" class="logo">
+            <a href="#" class="header__brand navbar-brand">KJ<span class="header__brand--span">Design</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="../pages/portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a href="../pages/contact.html">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-    
+        </div>
+    </nav>
+
     <div class="quote">
         <blockquote>
             <p>You are not your resume, You are your work.</p>
             <cite>Seth Godin</cite>
         </blockquote>
-
-    <h2 class="about__heading--h2">COMING SOON</h2>
-
+    </div>
+    
+    <div class="container mt-3">
+        <h2 class="about__heading--h2">COMING SOON</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+        </div>
+    </div>
 
         <!--BOOTSTRAP SCRIPTS-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
