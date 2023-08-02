@@ -148,10 +148,6 @@ a {
     color: #fff;
 }
 
-.about__img {
-    display: none;
-}
-
 .about__heading {
     width: 70%;
     text-align: center;
@@ -171,6 +167,15 @@ a {
     font-style: italic;
 }
 
+.blink_me {
+        animation: blinker 1s linear infinite;
+        }
+    
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
 
 .skills, .tech-skills {
     position: absolute;
@@ -227,7 +232,6 @@ li i {
     100% {
         color: #00c189;
     }
-
 
 }
 
@@ -435,7 +439,15 @@ footer {
 
 /********ABOUT US PAGE**********/
 
-/**** QUOTE******/
+
+  .about__header {
+      margin-top: 80px;
+      padding: 20px;
+      background: linear-gradient(120deg, #17bca6 60%, #d9d5d5 10%);
+      height: 100vh;
+  }
+
+  /**** QUOTE******/
 
 .quote {
     display: inline-block;
@@ -547,9 +559,6 @@ cite {
      flex-basis: 80%;
  }
 
- .contact__us__row--right form {
-     width: 80%;
- }
 
  .contact__us__row--right button:hover,
  button:active {
@@ -564,27 +573,6 @@ cite {
     margin-top: 30px;
  }
 
-
-  /****** ABOUT PAGE ********/
-
-  .about__header {
-      margin-top: 80px;
-      padding: 20px;
-      background: linear-gradient(120deg, #17bca6 60%, #d9d5d5 10%);
-      height: 100vh;
-  }
-
-
-
-  /****** CONTACT PAGE *****/
-
-
-  .contact__us__heading--h2 {
-      padding: 40px;
-      font-size: 60px;
-      font-weight: 600;
-      color: white;
-  }
 
   .contact__us__row--right form {
       width: 90%;
@@ -619,8 +607,8 @@ cite {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 300px;
-        width: 300px;
+        height: 350px;
+        width: 350px;
         border-radius: 30%;
         object-fit: cover;
     }
@@ -648,12 +636,17 @@ cite {
     .header__heading--h2 {
         font-size: 25px;
         text-align: center;
+        margin-top: auto;
     }
 
     .header__heading--h3 {
         margin-top: 20px;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 600;
+    }
+
+    .header__heading--h3 a {
+        color: #008080;
     }
 
     .header__heading--span1 {
@@ -663,128 +656,9 @@ cite {
     }
 
     .header__heading--span2 {
+        margin-top: 5px;
         display: block;
     }
-
-}
-
-/***********MEDIA QUERY ABOUT SECTION*****/
-@media only screen and (max-width: 600px) {
-    .about {
-        height: 150vh;
-        padding-top: 10%;
-
-    }
-
-    .about__img {
-        display: block;
-        text-align: center;
-        padding: 10% 3% 0% 0;
-    }
-
-    .about__img img {
-        height: 250px;
-        width: 250px;
-        border-radius: 10px;
-    }
-
-    .about__img img:hover {
-        transform: translate(-5px, -10px);
-        cursor: pointer;
-        box-shadow: 13px 10px 5px 0px rgba(231, 223, 223, 0.75);
-    }
-
-    .about__heading--h2 {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .about__heading {
-        width: 80%;
-    }
-
-    .about__heading--paragraph {
-        text-align: left;
-    }
-
-    .about__header {
-        margin-top: 60px;
-        padding: 30px;
-        background: linear-gradient(120deg, #17bca6 60%, #d9d5d5 10%);
-        height: 100vh;
-        }
-    
-/***********MEDIA QUERY PORTFOLIO SECTION*****/
-@media only screen and (max-width: 600px) {
-    .portfolio {
-        height: 200vh;
-    }
-
-    .portfolio__heading--h2 {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-    .portfolio__img img {
-        width: 70%;
-        height: 280px;
-        margin: 0 auto 5%;
-
-    }
-
-    .portfolio__img:last-child {
-        margin-bottom: 10%;
-    }
-
-    .portfolio__btn {
-        padding: 5% 15%;
-    }
-
-    .portfolio__header {
-        margin-top: 60px;
-        padding: 20px;
-        background: linear-gradient(120deg, #17bca6 60%, #d9d5d5 10%);
-        height: 100vh;
-        }
-
-}
-
-/***********MEDIA QUERY CONTACT SECTION*****/
-@media only screen and (max-width: 600px) {
-
-    .contact {
-        height: 180vh;
-    }
-
-    .contact__row {
-        flex-direction: column;
-    }
-
-    .contact__heading--h2 {
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-
-    .contact__btn.contact__btn--2 {
-        margin: 10% 0;
-    }
-
-   
-
-
-}
-
-
-/***********MEDIA QUERY FOOTER SECTION*****/
-
-@media only screen and (max-width: 600px) {
-    footer p {
-        padding: 5% 0 0;
-    }
-
-}
-
 
  /*creating the shake animation*/
 
@@ -842,6 +716,106 @@ cite {
      -webkit-animation-iteration-count: infinite;
      -webkit-animation-timing-function: linear;
  }
+
+}
+
+/***********MEDIA QUERY ABOUT SECTION*****/
+@media only screen and (max-width: 600px) {
+    .about {
+        height: 150vh;
+        padding-top: 10%;
+
+    }
+
+
+    .about__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .about__heading {
+        width: 80%;
+    }
+
+    .about__header {
+        margin-top: 60px;
+        padding: 30px;
+        background: linear-gradient(120deg, #17bca6 60%, #d9d5d5 10%);
+        height: 100vh;
+        }
+
+    }
+/***********MEDIA QUERY PORTFOLIO SECTION*****/
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        height: 200vh;
+    }
+
+    .portfolio__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .portfolio__img img {
+        width: 70%;
+        height: 280px;
+        margin: 0 auto 5%;
+
+    }
+
+    .portfolio__img:last-child {
+        margin-bottom: 10%;
+    }
+
+    .portfolio__btn {
+        padding: 5% 15%;
+    }
+
+    .portfolio__header {
+        margin-top: 60px;
+        padding: 20px;
+        background: linear-gradient(120deg, #17bca6 60%, #d9d5d5 10%);
+        height: 100vh;
+        }
+
+}
+
+/***********MEDIA QUERY CONTACT SECTION*****/
+@media only screen and (max-width: 600px) {
+
+    .contact {
+        height: 180vh;
+    }
+
+    .contact__row {
+        flex-direction: column;
+    }
+
+    .contact__heading--h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+
+    .contact__btn.contact__btn--2 {
+        margin: 10% 0;
+    }
+
+
+}
+
+
+/***********MEDIA QUERY FOOTER SECTION*****/
+
+@media only screen and (max-width: 600px) {
+    footer p {
+        padding: 5% 0 0;
+    }
+
+}
+
+
+
 
  /***********MEDIA QUERY CONTACT SECTION*****/
  @media only screen and (max-width: 600px) {
