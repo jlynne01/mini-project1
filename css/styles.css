@@ -744,6 +744,10 @@ cite {
         height: 100vh;
         }
 
+    ul {
+        margin: auto;
+    }
+
     }
 /***********MEDIA QUERY PORTFOLIO SECTION*****/
 @media only screen and (max-width: 600px) {
