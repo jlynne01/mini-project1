@@ -344,7 +344,7 @@ li i {
     font-size: 30px;
     margin-top: 20px;
     margin-right: 30px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .contact__left--icons a {
@@ -757,7 +757,7 @@ cite {
     }
 
     .portfolio__img img {
-        width: 70%;
+        width: 90%;
         height: 280px;
         margin: 0 auto 5%;
 
@@ -801,6 +801,11 @@ cite {
         margin: 10% 0;
     }
 
+    .contact__row--left p {
+        margin-top: 30px;
+        margin-left: 0;
+        font-size: 20px;
+    }
 
 }
 
